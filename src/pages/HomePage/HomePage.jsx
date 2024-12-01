@@ -25,7 +25,7 @@ const HomePage = () => {
         <nav className={`nav-items ${sidebarOpen ? 'active' : ''}`}>
           <ul>
             <li><a href="/">Home</a></li>
-            <li><a href="/login">Login</a></li>
+            <li><a onClick={() => navigate('/login')>Login</a></li>
             <li><a href="#contact">Contact Us</a></li>
           </ul>
         </nav>
