@@ -1,0 +1,14 @@
+:root{
+    --main-light-color: #fff;
+    --tertiary-light-color: #dee2e6;
+    --main-dark-color: #3c009d;
+    --secondary-dark-color: #5DADE2;
+    --secondary-light-color: #eaeaea;
+    --primary-text-color: #333;
+    --secondary-text-color: #797979;
+    --tertiary-text-color: #777;
+    --primary-danger-color: red;
+    --tertiary-dark-color: #f5c2c7;
+    --special-light-color: #f8d7da;
+    --deep-button-color: #f5c2c7;
+}

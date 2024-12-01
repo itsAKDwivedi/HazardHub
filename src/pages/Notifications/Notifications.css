@@ -1,0 +1,35 @@
+@import "../../assets/colors.css";
+
+.notifications-page{
+  background-color: var(--secondary-light-color);
+}
+
+  .notifications-page ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .notifications-page li {
+    padding: 10px;
+    border-bottom: 1px solid var(--secondary-text-color);
+  }
+  
+  .notifications-page li p {
+    margin: 0;
+  }
+  
+  .notifications-page li small {
+    color: var(--secondary-text-color);
+  }
+  
+.notifications-container{
+  padding-left: 25px;
+  padding-right: 25px;
+  max-width: 900px;
+  margin: auto;
+  background-color: var(--main-light-color);
+}
+
+.notification-item{
+  cursor: pointer;
+}

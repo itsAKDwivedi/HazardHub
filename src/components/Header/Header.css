@@ -1,0 +1,76 @@
+@import "../../assets/colors.css";
+
+.navbar {
+    margin: 0%;
+    margin-bottom: 3px;
+    width: 100%;
+    min-height: 70px;
+    display: flex;
+    justify-content: space-between; /* To space out BrandLogo and Logout button */
+    align-items: center;
+    padding: 0.1rem 0 0.5rem 0.3rem;
+    background-color: var(--main-dark-color); /* Dark color for the navbar */
+}
+
+.right-nav{
+    display: flex;
+    
+}
+
+.logout-button {
+    background: none;
+    border: none;
+    color: var(--main-light-color);
+    font-size: 20px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    padding-right: 18px;
+}
+
+.logout-button:hover {
+    color: var(--tertiary-light-color); /* Change to a highlight color on hover */
+}
+
+
+.notifications-wrapper {
+    position: relative;
+}
+  
+  .notifications-tooltip {
+    position: absolute;
+    z-index: 100;
+    top: 40px;
+    right: 0;
+    background-color: var(--main-light-color);
+    border: 1px solid var(--tertiary-light-color);
+    padding: 10px;
+    width: 200px;
+  }
+  
+  .notifications-tooltip ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .notifications-tooltip li {
+    margin-bottom: 10px;
+  }
+  
+  .notifications-tooltip button {
+    background-color: var(--main-dark-color);
+    color: var(--main-light-color);
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+  
+  .bell-button {
+    color: var(--main-light-color);
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1.2em;
+  }
+  

@@ -1,0 +1,66 @@
+@import "../../assets/colors.css";
+
+.footer-container {
+    padding-top: 15px;
+    background-color: var(--primary-text-color);
+    color: var(--main-light-color);
+    text-align: center;
+    width: 100%;
+  }
+  
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+.footer-brand{
+    display: flex;
+    gap: 15px;
+}
+  
+  .footer-brand h2 {
+    color: var(--main-light-color);
+    font-size: 2rem;
+    margin: 0;
+    padding: 10px 0;
+  }
+  
+  .footer-links {
+    margin: 10px 0;
+  }
+  
+  .footer-links a {
+    color: var(--secondary-light-color);
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 1rem;
+  }
+  
+  .footer-links a:hover {
+    color: var(--secondary-dark-color);
+  }
+  
+  .footer p {
+    color: var(--tertiary-light-color);
+    margin-top: 10px;
+  }
+  
+  .footer .footer-links a {
+    font-size: 1rem;
+  }
+  
+.footer-brand img{
+    height: 50px;
+}
+  
+  @media (max-width: 600px) {
+    .footer {
+      padding: 15px;
+    }
+  
+    .footer-brand h2 {
+      font-size: 1.5rem;
+    }
+  }

@@ -1,0 +1,187 @@
+@import "../../assets/colors.css";
+
+.screen{
+    display: flex;
+    margin: auto;
+}
+
+.login-container{
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    margin-left: 5%;
+    background: var(--main-light-color);
+    padding-bottom: 30px;
+}
+
+.login-header{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 30px;
+}
+
+.login-heading{
+    color: var(--primary-text-color);
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.login-head-underline{
+    width: 61px;
+    height: 6px;
+    margin-top: 2px;
+    background: var(--tertiary-text-color);
+    border-radius: 9px;
+}
+
+.radio-buttons {
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 20px; /* Adds space between each radio button label pair */
+}
+
+.radio-buttons label {
+    align-items: center;
+    font-size: 16px;
+    color: var(--primary-text-color); /* Text color */
+    cursor: pointer;
+}
+
+.radio-buttons input[type="radio"] {
+    margin-right: 8px; /* Space between the radio button and the label text */
+    width: 16px; 
+    height: 16px;
+    accent-color: var(--main-dark-color);
+    cursor: pointer;
+}
+
+.inputs{
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.input{
+    display: flex;
+    align-items: center;
+    width: 480px;
+    height: 80px;
+    background: var(--secondary-light-color);
+    border-radius: 6px;
+}
+
+.input img{
+    margin: 0px 30px;
+    -webkit-user-drag: none;
+}
+
+.input input{
+    height: 50px;
+    width: 80%;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: var(--tertiary-text-color);
+    font-size: 19px;
+}
+
+.forgot-password{
+    margin-top: 27px;
+    color: var(--secondary-text-color);
+    font-size: 18px;
+}
+
+.forgot-password span{
+    color: var(--main-dark-color);
+    cursor: pointer;
+}
+
+.submit-container{
+    display: flex;
+    gap: 30px;
+    margin-top: 45px;
+}
+
+.submit{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 220px;
+    height: 59px;
+    color: var(--main-light-color);
+    background: var(--main-dark-color);
+    border-radius: 50px;
+    font-size: 19px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.gray{
+    background: var(--secondary-light-color);
+    color: var(--secondary-text-color);
+}
+
+.banner{
+    width: 60%;
+    margin-left: 15px;
+    background-image: url(../../assets/banner.png);
+    background-size: cover;
+    min-height: 100vh;
+    margin-right: 0;
+}
+
+.input-image{
+    height: 22px;
+    width: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+    .screen{
+        width: 100vw;
+        margin: auto;
+    }
+
+    .banner{
+        display: none;
+    }
+
+    .login-container {
+        width: 100%;
+        margin: auto;
+    }
+
+    .title-container{
+        padding-left: 2.5%;
+    }
+
+    .login-header{
+        margin-top: none;
+        padding-left: 2.5%;
+    }
+
+    .radio-buttons {
+        justify-content: center; /* Center the buttons on smaller screens */
+        gap: 10px; /* Less space on smaller screens */
+    }
+
+    .input{
+        width: 97.5vw;
+        margin: auto;
+    }
+
+    .forgot-password{
+        padding-left: 2.5%;
+    }
+
+    .submit-container{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .submit{
+        width: 97.5vw;
+        margin: auto;
+    }
+}

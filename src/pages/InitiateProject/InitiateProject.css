@@ -1,0 +1,239 @@
+@import "../../assets/colors.css";
+
+.project-screen{
+  max-width: 99.05vw !important;
+}
+
+/* Navigation Bar */
+
+
+/* Main Body Container */
+
+.projectFormBody{
+  display: flex;
+
+}
+
+.projectFormWrapper {
+  width: 50%;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: var(--secondary-light-color); /* Light background color for the body */
+  border-radius: 8px;
+  box-shadow: 0 2px 10px var(--primary-text-color);
+}
+
+/* Left Image Banner */
+
+.projectBanner{
+  width: 40%;
+  margin-left: 15px;
+  background-image: url(../../assets/create.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  min-height: 80vh;
+  margin-right: 0;
+}
+
+/* Right Side CSS */
+
+.projectFormTitle {
+  color: var(--secondary-text-color); /* Darker text color */
+  font-size: 1.5rem;
+} 
+
+/* Form styles */
+
+.projectForm {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.projectFormInput {
+  max-width: 800px;
+  width: 97%;
+  padding: 10px;
+  border: 1px solid var(--tertiary-text-color);
+  border-radius: 4px;
+  font-size: 1rem;
+  background-color: var(--main-light-color);
+  box-shadow: inset 0 1px 3px var(--secondary-light-color);
+}
+  
+.projectFormInput:focus {
+  outline: none;
+}
+
+textarea{
+  resize: vertical;
+  min-height: 150px;
+}
+  
+  /* Select box */
+  
+  .projectFormSelect {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid var(--secondary-text-color);
+    border-radius: 4px;
+    font-size: 1rem;
+    background-color: var(--main-light-color);
+  }
+  
+  .projectFormSelect:focus {
+    outline: none;
+  }
+  
+
+  .image-preview-box {
+    width: 200px;   /* Set the desired width */
+    height: auto;   /* Maintain the aspect ratio */
+    border: 1px solid var(--main-dark-color);
+    margin-top: 10px;
+  }
+  
+
+
+  /* Submit button */
+.formSubmit {
+  max-width: 800px;
+  padding: 12px;
+  background-color: var(--main-dark-color); /* Button color */
+  color: var(--main-light-color);
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.gray{
+  background: var(--secondary-light-color);
+  color: var(--main-dark-color);
+}
+
+.projectLabel{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  font-weight: bold;
+  gap: 5px;
+  color: var(--primary-text-color);
+}
+
+.reviewContainer {
+  margin: 0 auto;
+  /* padding: 20px; */
+  /* background-color: var(--main-light-color); */
+  border-radius: 10px;
+  /* box-shadow: 0 4px 8px var(--primary-text-color); */
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.form-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid var(--tertiary-text-color);
+}
+
+.project-detail {
+  color: var(--secondary-text-color);
+  text-align: end;
+}
+
+/* Container Styling */
+.finishContainer {
+  margin: 0 auto;
+  padding: 40px;
+  max-width: 500px;
+  background-color: var(--main-light-color);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px var(--primary-text-color);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Success Message */
+.finishContainer p {
+  font-size: 1.2rem;
+  color: var(--primary-text-color);
+  margin: 10px 0;
+  font-weight: 500;
+}
+
+/* Success Icon */
+.done {
+  width: 100px;
+  height: 100px;
+  margin: 20px 0;
+}
+
+/* Done Button */
+.doneSubmit {
+  background-color: var(--main-dark-color);
+  color: var(--main-light-color);
+  padding: 12px 25px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 20px;
+}
+
+.doneSubmit:hover {
+  background-color: var(--secondary-text-color);
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .container {
+      padding: 20px;
+  }
+  .done {
+      width: 80px;
+      height: 80px;
+  }
+  .doneSubmit {
+      padding: 10px 20px;
+      font-size: 0.9rem;
+  }
+}
+
+/* @media only screen and (max-width: 1325px) {
+  .projectBanner{
+    width: 50%;
+  }
+} */
+
+/* @media only screen and (max-width: 1144px) {
+  .projectBanner{
+    width: 60%;
+  }
+} */
+
+@media only screen and (max-width: 1050px) {
+  .projectBanner{
+    width: 0%;
+  }
+
+  .projectFormWrapper{
+    width: 80%;
+  }
+}
+
+
+
+
+
+
+

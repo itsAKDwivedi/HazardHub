@@ -1,0 +1,16 @@
+@import "../../assets/colors.css";
+
+.brand-setup {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    align-items: center;
+    padding: 0.1rem 0.7rem 0.2rem 0.2rem; /* Dark color for the navbar */
+    height: 50px;
+    cursor: pointer;
+}
+
+.brand-setup img{
+    height: 50px;
+    cursor: pointer;
+}
