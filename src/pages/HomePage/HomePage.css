@@ -21,11 +21,12 @@ nav ul {
     list-style: none;
 }
 
-nav ul li a {
+nav ul li p {
     text-decoration: none;
     color: var(--primary-text-color);
     font-weight: bold;
     padding: 15px;
+    cursor: pointer;
 }
 
 .getStart-button {
