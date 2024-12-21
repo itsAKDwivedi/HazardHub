@@ -24,9 +24,9 @@ const HomePage = () => {
 
         <nav className={`nav-items ${sidebarOpen ? 'active' : ''}`}>
           <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="https://hazardhub.netlify.app/login">Login</a></li>
-            <li><a href="#contact">Contact Us</a></li>
+            <li><p onClick={()=>navigate('/')}>Home</p></li>
+            <li><p onClick={()=>navigate('/login')}>Login</p></li>
+            <li><p onClick={()=>navigate('/contact')}>Contact Us</p></li>
           </ul>
         </nav>
 
